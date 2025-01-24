@@ -1,6 +1,6 @@
 package com.stv.design.designpages;
 
-import com.stv.framework.core.drivers.MyDriver;
+import com.stv.framework.core.driver.MyDriver;
 import org.openqa.selenium.WebDriver;
 
 

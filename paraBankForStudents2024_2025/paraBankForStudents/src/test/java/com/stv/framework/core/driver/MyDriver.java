@@ -1,8 +1,7 @@
-package com.stv.framework.core.drivers;
+package com.stv.framework.core.driver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class MyDriver {

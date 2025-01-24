@@ -1,6 +1,6 @@
-package com.stv.design.designtests;
+package com.stv.factory.factorytests;
 
-import com.stv.framework.core.drivers.MyDriver;
+import com.stv.framework.core.driver.MyDriver;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -10,7 +10,7 @@ import java.time.Duration;
 import static com.stv.framework.core.lib.ParaBankPageURLs.START_URL;
 
 
-public class BasicTest {
+public class BasicFactoryTest {
     public static WebDriver getDriver() {
         return MyDriver.getDriver();
     }
@@ -26,5 +26,10 @@ public class BasicTest {
     @AfterClass
     public void afterClass() throws Exception {
         getDriver().quit();
+    }
+
+    public boolean pageContainsText(String text) {
+        String pageSource = getDriver().getPageSource();
+        return pageSource.contains(text);
     }
 }

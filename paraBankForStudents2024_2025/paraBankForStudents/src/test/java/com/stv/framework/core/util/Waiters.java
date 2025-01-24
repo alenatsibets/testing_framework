@@ -1,4 +1,4 @@
-package com.stv.framework.core.utils;
+package com.stv.framework.core.util;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
